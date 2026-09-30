@@ -1,0 +1,12 @@
+{
+  "name": "data-scraper-joblisting",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Web UI",
+      "onAutoForward": "openPreview"
+    }
+  }
+}

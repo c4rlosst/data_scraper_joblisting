@@ -1,0 +1,27 @@
+{
+  "name": "data-scraper-joblisting",
+  "version": "0.1.0",
+  "description": "Pull job postings from public job boards and filter them by keywords, location, salary and age.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "cli": "npm run build && node dist/cli.js",
+    "server": "npm run build && node dist/server.js",
+    "dev": "npm run server",
+    "start": "npm run server",
+    "test": "npm run build && node --test dist/*.test.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}
